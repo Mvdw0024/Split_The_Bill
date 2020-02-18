@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" Diviser La Facture"</string>
+    <string name="et_str_partysize">" Combien de personnes"</string>
+    <string name="et_str_tip">Le pourboire</string>
+    <string name="pref_et_tip">Pourboire</string>
+    <string name="pref_et_tip_sum">" Le montant que vous donnez habituellement comme pourboire"</string>
+    <string name="pref_paymentmethod">" Votre mode de paiement préféré"</string>
+    <string name="pref_title_paymentmethod">Sélectionnez votre mode de paiement préféré</string>
+    <string name="te_str_amount">Le montant</string>
+    <string name="str_splitBtn">Diviser la facture</string>
+    <string name="tv_str_about">Ceci est une application pour diviser la facture</string>
+    <string name="str_about_author">" Michael Van de Wouwer©"</string>
+    <string name="str_is_nice">\"Very Nice ! \" - Borat</string>
+</resources>

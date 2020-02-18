@@ -31,7 +31,6 @@ public class BillFragment extends Fragment {
     public BillFragment() {
     }
 
-
     public static BillFragment newInstance() {
         return new BillFragment();
         // Required empty public constructor
@@ -58,7 +57,6 @@ public class BillFragment extends Fragment {
 
             }
 
-
             double tip;
 
             if (inPtip.getText().toString().isEmpty()) {
@@ -73,7 +71,6 @@ public class BillFragment extends Fragment {
             Toast.makeText(getActivity(), "Bill has been split under " + party + " person(s)", Toast.LENGTH_SHORT).show();
 
         }
-
 
     };
 
