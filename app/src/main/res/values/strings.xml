@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Split The Bill</string>
+    <string name="pref_paymentmethod">pref_paymentmethod</string>
+    <string name="pref_title_paymentmethod">Select your prefered payment method</string>
+    <string name="pref_et_tip">Tip</string>
+    <string name="pref_et_tip_sum">the amount you usually give as a tip</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="te_str_amount">Amount</string>
+    <string name="et_str_tip">Amount to tip</string>
+    <string name="et_str_partysize">Size of party</string>
+    <string name="str_splitBtn">Split the bill</string>
+    <string name="tv_str_about">This is an app to Split The Bill</string>
+    <string name="str_about_author">Made by Michael Van de Wouwer©</string>
+</resources>

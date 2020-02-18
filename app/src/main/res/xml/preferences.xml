@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="false"
+        android:entries="@array/paymentmethods"
+        android:entryValues="@array/paymentmethods"
+        android:icon="@android:drawable/ic_menu_more"
+        android:key="@string/pref_paymentmethod"
+        android:title="@string/pref_title_paymentmethod" />
+    <EditTextPreference
+        android:icon="@android:drawable/ic_input_add"
+        android:key="@string/pref_et_tip"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/pref_et_tip_sum"
+        android:title="@string/pref_et_tip" />
+</PreferenceScreen>
