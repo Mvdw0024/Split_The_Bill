@@ -42,9 +42,25 @@ public class BillFragment extends Fragment {
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
             String tipKey = getResources().getString(R.string.pref_et_tip);
 
-            double bill = Double.valueOf(inpBill.getText().toString());
-            int party = Integer.valueOf(inpParty.getText().toString());
+            double bill;
+            if (inpBill.getText().toString().isEmpty()) {
+                bill = 0;
+            } else {
+                bill = Double.valueOf(inpBill.getText().toString());
+            }
+
+            int party;
+
+            if (inpParty.getText().toString().isEmpty()) {
+                party = 1;
+            } else {
+                party = Integer.valueOf(inpParty.getText().toString());
+
+            }
+
+
             double tip;
+
             if (inPtip.getText().toString().isEmpty()) {
                 tip = Double.valueOf(prefs.getString(tipKey, "1"));
             } else {

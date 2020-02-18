@@ -9,6 +9,7 @@ import android.os.Bundle;
 import com.google.android.material.tabs.TabLayout;
 
 import vandewouwer.michael.splitthebill.Utils.TabPagerAdapter;
+import vandewouwer.michael.splitthebill.Utils.ZoomOutPageTransformer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,5 +29,6 @@ public class MainActivity extends AppCompatActivity {
         //alles instellen
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+        viewPager.setPageTransformer(true,new ZoomOutPageTransformer());
     }
 }
