@@ -17,5 +17,6 @@
         android:selectAllOnFocus="true"
         android:singleLine="true"
         android:summary="@string/pref_et_tip_sum"
-        android:title="@string/pref_et_tip" />
+        android:title="@string/pref_et_tip"
+        android:imeOptions="actionNext"/>
 </PreferenceScreen>

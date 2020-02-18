@@ -74,7 +74,6 @@ public class BillFragment extends Fragment {
 
     };
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -91,7 +90,6 @@ public class BillFragment extends Fragment {
         inPtip.setText(prefs.getString(tipKey, "1"));
         splitBill = rootView.findViewById(R.id.textView);
 
-
         return rootView;
     }
 
@@ -103,6 +101,15 @@ public class BillFragment extends Fragment {
         String tipKey = getResources().getString(R.string.pref_et_tip);
         inPtip.setText(prefs.getString(tipKey, "1"));
 
+    }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String tipKey = getResources().getString(R.string.pref_et_tip);
+        inPtip.setText(prefs.getString(tipKey, "1"));
     }
 }
+
