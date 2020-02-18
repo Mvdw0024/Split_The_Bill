@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 
+import vandewouwer.michael.splitthebill.Utils.DepthPageTransformerpublic;
 import vandewouwer.michael.splitthebill.Utils.TabPagerAdapter;
 import vandewouwer.michael.splitthebill.Utils.ZoomOutPageTransformer;
 
