@@ -7,6 +7,7 @@
         android:entryValues="@array/paymentmethods"
         android:icon="@android:drawable/ic_menu_more"
         android:key="@string/pref_paymentmethod"
+        android:summary="%s"
         android:title="@string/pref_title_paymentmethod" />
     <EditTextPreference
         android:icon="@android:drawable/ic_input_add"
@@ -14,5 +15,7 @@
         android:selectAllOnFocus="true"
         android:singleLine="true"
         android:summary="@string/pref_et_tip_sum"
-        android:title="@string/pref_et_tip" />
+        android:title="@string/pref_et_tip"
+        android:inputType="numberDecimal"
+        android:digits="0123456789"/>
 </PreferenceScreen>
