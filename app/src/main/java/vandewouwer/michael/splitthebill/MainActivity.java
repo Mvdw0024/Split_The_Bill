@@ -18,18 +18,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //verwijzen naar componenten in UI
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         TabLayout tabLayout = findViewById(R.id.tab_layout);
         ViewPager viewPager = findViewById(R.id.frag_container);
 
-        //omschrijving hoe alles opgevuld moet worden
         TabPagerAdapter adapter = new TabPagerAdapter(getSupportFragmentManager(), 0);
-        //alles instellen
+
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
-        viewPager.setPageTransformer(true,new ZoomOutPageTransformer());
+        viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
     }
 }
