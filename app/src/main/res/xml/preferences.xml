@@ -10,12 +10,12 @@
         android:summary="%s"
         android:title="@string/pref_title_paymentmethod" />
     <EditTextPreference
+        android:defaultValue="1"
         android:icon="@android:drawable/ic_input_add"
+        android:inputType="number|numberDecimal"
         android:key="@string/pref_et_tip"
         android:selectAllOnFocus="true"
         android:singleLine="true"
         android:summary="@string/pref_et_tip_sum"
-        android:title="@string/pref_et_tip"
-        android:inputType="numberDecimal"
-        android:digits="0123456789"/>
+        android:title="@string/pref_et_tip" />
 </PreferenceScreen>

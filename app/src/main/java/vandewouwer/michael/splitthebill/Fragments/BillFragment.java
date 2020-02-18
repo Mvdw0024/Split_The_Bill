@@ -79,6 +79,8 @@ public class BillFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String tipKey = getResources().getString(R.string.pref_et_tip);
 
         View rootView = inflater.inflate(R.layout.fragment_bill, container, false);
         Button splitBtn = rootView.findViewById(R.id.btn_splitthebill);
@@ -86,11 +88,21 @@ public class BillFragment extends Fragment {
         inpBill = rootView.findViewById(R.id.te_Amount);
         inpParty = rootView.findViewById(R.id.et_partysize);
         inPtip = rootView.findViewById(R.id.et_tip);
+        inPtip.setText(prefs.getString(tipKey, "1"));
         splitBill = rootView.findViewById(R.id.textView);
 
 
         return rootView;
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
 
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getContext());
+        String tipKey = getResources().getString(R.string.pref_et_tip);
+        inPtip.setText(prefs.getString(tipKey, "1"));
+
+
+    }
 }
